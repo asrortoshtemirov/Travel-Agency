@@ -1,0 +1,227 @@
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 4.6rem;
+  text-align: center;
+  font-weight: 400;
+}
+h3 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+li,
+button,
+input,
+label,
+p {
+  font-size: 2rem;
+}
+button {
+  padding: 2rem 6rem;
+  font-size: 1.8rem;
+  background: #002831;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #033742;
+}
+
+/* header, nav, hero (section) */
+.main-head {
+  background: #002831;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+}
+ul li {
+  list-style: none;
+}
+#logo {
+  flex: 1 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+/* hero (section) */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url(../images/jeshoots-com-mSESwdMZr-A-unsplash.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h3 {
+  padding: 5rem;
+}
+
+/* benefits (section) */
+.benefits-head {
+  background: #002831;
+  padding: 3rem;
+  color: #fff;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  min-height: 40vh;
+  flex: 1 1 25rem;
+  margin: 2rem 5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.card-icon {
+  background: #add8e6;
+}
+.card img {
+  max-width: 28%;
+  margin: 2rem;
+}
+.card h4,
+.card p {
+  padding: 1rem;
+}
+
+/* contact (section)*/
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url(../images/pexels-leah-newhouse-3935702.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background: rgba(0, 0, 0, 0.2);
+  width: 60%;
+  color: #fff;
+  border-radius: 2px;
+  /* margin: 2rem; */
+}
+.form-head {
+  text-align: center;
+  padding-top: 2rem;
+}
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+}
+.form-wrapper label {
+  margin: 0.25rem 3rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+}
+
+/* Footer */
+footer {
+  background: #002831;
+
+}
+.footer-wrapper {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 30rem;
+  color: #fff;
+}
+footer ul {
+  flex: 1 1 30rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* media query */
+@media screen and (max-width: 940px) {
+  html {
+    font-size: 55%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  footer h5 {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer ul li {
+    padding: 1rem;
+  }
+  .form-wrapper {
+    width: 90%;
+  }
+}
